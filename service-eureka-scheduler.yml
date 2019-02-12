@@ -26,6 +26,7 @@ scheduler:
     - service-rss-reader
   configMap:
     service-rss-reader:
+      name: service-rss-reader
       rate: 60000
       path: fetchRSSFeed
 ---
