@@ -1,0 +1,32 @@
+spring:
+  profiles: 
+    active: dev
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  application:
+    name: service-eureka-scheduler
+  devtools:
+    restart:
+      enabled: false
+eureka:
+  instance:
+    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
+  client:
+    register-with-eureka: true
+    instance:
+      appname: service-eureka-scheduler
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+server:
+  port: 8763
+scheduler:
+  enable: true
+  config:
+    name: config
+  configList:
+    - service-rss-reader
+  configMap:
+    service-rss-reader:
+      rate: 60000
+      path: fetchRSSFeed
