@@ -8,7 +8,7 @@ spring:
     name: service-rss-reader
 eureka:
   instance:
-    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
+    hostname: localhost
   client:
     register-with-eureka: true
     instance:
@@ -28,3 +28,9 @@ mongodb:
     username:
     password:
     db: service-rss-reader-${spring.profiles.active}
+---
+spring:
+  profiles: prod
+eureka:
+  instance:
+    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
