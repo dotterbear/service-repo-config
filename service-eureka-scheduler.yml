@@ -27,7 +27,7 @@ scheduler:
   configMap:
     service-rss-reader:
       name: service-rss-reader
-      rate: 60000
+      rate: 1800000
       path: fetchRSSFeed
 ---
 spring:
