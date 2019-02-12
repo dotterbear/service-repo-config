@@ -11,7 +11,7 @@ spring:
       enabled: false
 eureka:
   instance:
-    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
+    hostname: localhost
   client:
     register-with-eureka: true
     instance:
@@ -30,3 +30,9 @@ scheduler:
     service-rss-reader:
       rate: 60000
       path: fetchRSSFeed
+---
+spring:
+  profiles: prod
+eureka:
+  instance:
+    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
