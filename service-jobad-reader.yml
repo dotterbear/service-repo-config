@@ -1,6 +1,5 @@
 spring:
-  profiles: 
-    active: dev
+  profiles: dev
 mongodb:
   host: 127.0.0.1
   port: 27017
