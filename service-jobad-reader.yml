@@ -1,20 +1,8 @@
-spring:
-  profiles: dev
 mongodb:
-  host: 127.0.0.1
-  port: 27017
   db: jobad-${spring.profiles.active}
-  auth:
-    username: myUserAdmin
-    password: abc123
-    db: admin
   bulk:
     insert: 500
 eureka:
-  instance:
-    hostname: 127.0.0.1
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
   client:
     register-with-eureka: true
     instance:
@@ -25,18 +13,3 @@ com:
       rss.reader:
         value: service-rss-reader
         path: /
----
-spring:
-  profiles: prod
-mongodb:
-  host: 34.73.206.62
-  port: 37017
-  auth:
-    username: myUserAdmin
-    password: abc123
-    db: admin
-eureka:
-  instance:
-    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/

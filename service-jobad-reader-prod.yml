@@ -1,0 +1,12 @@
+mongodb:
+  host: 34.73.206.62
+  port: 37017
+  auth:
+    username: myUserAdmin
+    password: abc123
+    db: admin
+eureka:
+  instance:
+    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
