@@ -28,8 +28,7 @@ com:
         path: /
 ---
 spring:
-  profiles: 
-    active: prod
+  profiles: prod
 mongodb:
   host: 34.73.206.62
   port: 37017
