@@ -3,8 +3,6 @@ spring:
     active: dev
   application:
     name: service-zuul-server
-  main
-    allow-bean-definition-overriding: true
 eureka:
   instance:
     hostname: localhost
