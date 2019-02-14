@@ -1,0 +1,25 @@
+mongodb:
+  host: 34.73.206.62
+  port: 37017
+  db: jobad-${spring.profiles.active}
+  auth:
+    username: myUserAdmin
+    password: abc123
+    db: admin
+  bulk:
+    insert: 500
+eureka:
+  instance:
+    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
+  client:
+    register-with-eureka: true
+    instance:
+      appname: service-rss-reader
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+com:
+  dotterbear:
+    feign:
+      rss.reader:
+        value: service-rss-reader
+        path: /
