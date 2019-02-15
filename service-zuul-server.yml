@@ -15,7 +15,7 @@ zuul:
     data:
       path: /data/**
       service-id: service-jobad-reader
-      stripPrefix: true
+      stripPrefix: false
       
 
 server:
