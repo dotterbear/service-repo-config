@@ -1,11 +1,10 @@
 mongodb:
   host: 127.0.0.1
   port: 27017
-  db: jobad-${spring.profiles.active}
   auth:
     username: myUserAdmin
     password: abc123
     db: admin
 eureka:
   instance:
-    hostname: 127.0.0.1
+    hostname: localhost

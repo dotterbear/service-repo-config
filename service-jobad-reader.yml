@@ -13,3 +13,5 @@ com:
       rss.reader:
         value: service-rss-reader
         path: /
+server:
+  port: 8765
