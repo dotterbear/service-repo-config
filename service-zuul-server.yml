@@ -9,10 +9,14 @@ eureka:
       appname: service-zuul-server
 
 zuul:
+  ignored-services: "*"
   routes:
-    api-a:
-      path: /api-a/**
-      url: service-jobad-reader
+    data:
+      prefix: /api/v1
+      path: /data/**
+      service-id: service-jobad-reader
+      stripPrefix: true
+      
 
 server:
   port: 8766
