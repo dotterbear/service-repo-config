@@ -9,7 +9,8 @@ eureka:
 zuul:
   routes:
     data:
-      path: /api/v1/**
+      path: /data/**
       serviceId: service-jobad-reader
+      stripPrefix: false
 server:
   port: 8766
