@@ -1,27 +1,15 @@
 spring:
-  profiles: 
-    active: dev
   application:
     name: service-zuul-server
 eureka:
-  instance:
-    hostname: localhost
   client:
     register-with-eureka: true
     instance:
       appname: service-zuul-server
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
-server:
-  port: 8766
 zuul:
   routes:
     data:
       path: /api/v1/**
       serviceId: service-jobad-reader
----
-spring:
-  profiles: prod
-eureka:
-  instance:
-    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
+server:
+  port: 8766
