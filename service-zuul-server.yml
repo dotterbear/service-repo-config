@@ -12,6 +12,6 @@ zuul:
     api-a:
       path: /api-a/**
       serviceId: service-jobad-reader
-      stripPrefix: false
+      stripPrefix: true
 server:
   port: 8766
