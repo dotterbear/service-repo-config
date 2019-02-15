@@ -12,7 +12,7 @@ zuul:
   routes:
     api-a:
       path: /api-a/**
-      url: https://www.google.com/
+      url: service-jobad-reader
 
 server:
-  port: 8767
+  port: 8766
