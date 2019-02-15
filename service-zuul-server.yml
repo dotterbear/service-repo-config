@@ -1,17 +1,18 @@
 spring:
   application:
     name: service-zuul-server
+
 eureka:
   client:
     register-with-eureka: true
     instance:
       appname: service-zuul-server
+
 zuul:
-  ignoredServices: "*"
   routes:
     api-a:
       path: /api-a/**
       serviceId: service-jobad-reader
-      stripPrefix: true
+
 server:
   port: 8766
