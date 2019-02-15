@@ -15,4 +15,4 @@ zuul:
       url: https://www.google.com/
 
 server:
-  port: 8766
+  port: 8767
