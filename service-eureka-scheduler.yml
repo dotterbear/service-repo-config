@@ -23,12 +23,12 @@ server:
 scheduler:
   enable: true
   configList:
-    - service-rss-reader
+    - service-jobad-reader
   configMap:
     service-rss-reader:
-      name: service-rss-reader
+      name: service-jobad-reader
       rate: 1800000
-      path: fetchRSSFeed
+      path: /api/v1/batch/update-jobads
 ---
 spring:
   profiles: prod
