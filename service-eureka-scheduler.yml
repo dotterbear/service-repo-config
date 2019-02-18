@@ -25,7 +25,7 @@ scheduler:
   configList:
     - service-jobad-reader
   configMap:
-    service-rss-reader:
+    service-jobad-reader:
       name: service-jobad-reader
       rate: 1800000
       path: /api/v1/batch/update-jobads
