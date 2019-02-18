@@ -10,14 +10,10 @@ spring:
     restart:
       enabled: false
 eureka:
-  instance:
-    hostname: localhost
   client:
     register-with-eureka: true
     instance:
       appname: service-eureka-scheduler
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 server:
   port: 8763
 scheduler:
@@ -29,12 +25,3 @@ scheduler:
       name: service-jobad-reader
       rate: 1800000
       path: /api/v1/batch/update-jobads
----
-spring:
-  profiles: prod
-eureka:
-  instance:
-    hostname: 34.73.206.62
-  client:
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
