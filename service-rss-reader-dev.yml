@@ -7,8 +7,6 @@ eureka:
 mongodb:
   host: localhost
   port: 33001
-  db: service-rss-reader-${spring.profiles.active}
   auth:
     username:
     password:
-    db: service-rss-reader-${spring.profiles.active}
