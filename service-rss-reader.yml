@@ -14,11 +14,3 @@ server:
 rss:
   reader:
     url: ENC(t33192tsbdfo1CWtTi/wE2wfCPyteZfTDyp8KbpztcvUaAoE/bh1VLSEodQJM98vwUfYYBrepF73kRqBgafYtx5QGXBO71Kv)
-mongodb:
-  host: ENC(oXYwgkqavDow85fxwV0eSDCvVlKF4tjT)
-  port: ENC(YWpoI5+wFnm3ek2l2IRtpQ==)
-  db: service-rss-reader-${spring.profiles.active}
-  auth:
-    username:
-    password:
-    db: service-rss-reader-${spring.profiles.active}
