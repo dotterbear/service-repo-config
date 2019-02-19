@@ -5,14 +5,10 @@ spring:
   application:
     name: service-rss-reader
 eureka:
-  instance:
-    hostname: localhost
   client:
     register-with-eureka: true
     instance:
       appname: service-rss-reader
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 server:
   port: 8762
 rss:
