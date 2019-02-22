@@ -6,12 +6,12 @@ eureka:
   client:
     register-with-eureka: true
     instance:
-      appname: service-rss-reader
+      appname: service-jobad-reader
 com:
   dotterbear:
     feign:
       rss.reader:
-        value: service-rss-reader
+        value: service-jobad-reader
         path: /
 server:
   port: 8765
