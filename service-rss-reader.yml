@@ -13,7 +13,7 @@ server:
   port: 8762
 rss:
   reader:
-    url: ENC(t33192tsbdfo1CWtTi/wE2wfCPyteZfTDyp8KbpztcvUaAoE/bh1VLSEodQJM98vwUfYYBrepF73kRqBgafYtx5QGXBO71Kv)
+    url: https://hk.jobsdb.com/HK/en/Rss/JobListing?jobFunctionId=131
 mongodb:
   db: service-rss-reader-${spring.profiles.active}
   auth:
