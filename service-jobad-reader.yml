@@ -11,7 +11,7 @@ com:
   dotterbear:
     feign:
       rss.reader:
-        value: service-jobad-reader
+        value: service-rss-reader
         path: /
 server:
   port: 8765
