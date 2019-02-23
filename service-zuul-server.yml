@@ -17,4 +17,3 @@ zuul:
 
 server:
   port: 8766
-  address: 0.0.0.0
