@@ -4,7 +4,7 @@ mongodb:
   auth:
     username: service-jobad-reader
     password: pass
-    db: service-jobad-dev
+    db: jobad-dev
 
 eureka:
   instance:
