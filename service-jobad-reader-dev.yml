@@ -1,6 +1,6 @@
 mongodb:
   host: localhost
-  port: 27017
+  port: 37017
   auth:
     username: service-jobad-reader
     password: pass
