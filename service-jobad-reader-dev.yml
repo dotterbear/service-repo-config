@@ -5,12 +5,13 @@
 #     username: service-jobad-reader
 #     password: pass
 #     db: service-jobad-dev
-mongo
+mongo:
   host: localhost
   port: 37017
   defaultDbName: service-jobad-dev
   user: service-jobad-reader
   pwd: pass
+  socketKeepAlive: true
 eureka:
   instance:
     hostname: localhost
