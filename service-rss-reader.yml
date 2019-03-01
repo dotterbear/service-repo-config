@@ -23,5 +23,4 @@ com.dotterbear.rss.reader:
     jobsdb:
       date-time: EEE, dd MMM yyyy HH:mm:ss z
   serializer:
-    date-time:
-      date-time: yyyy-MM-dd'T'HHmmss.SSSZ
+    date-time: yyyy-MM-dd'T'HHmmss.SSSZ
