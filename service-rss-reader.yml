@@ -18,3 +18,10 @@ mongodb:
   db: service-rss-reader-${spring.profiles.active}
   auth:
     db: service-rss-reader-${spring.profiles.active}
+com.dotterbear.rss.reader:
+  deserializer:
+    jobsdb:
+      date-time: EEE, dd MMM yyyy HH:mm:ss z
+  serializer:
+    date-time:
+      date-time: yyyy-MM-dd'T'HHmmss.SSSZ
