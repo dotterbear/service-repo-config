@@ -4,13 +4,9 @@ mongodb:
     insert: 500
 eureka:
   client:
-    healthcheck:
-      enabled: true
     register-with-eureka: true
     instance:
       appname: service-jobad-reader
-      lease-expiration-duration-in-seconds: 30 
-      lease-renewal-interval-in-seconds: 10
 com:
   dotterbear:
     feign:
