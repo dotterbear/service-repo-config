@@ -1,0 +1,7 @@
+mongodb:
+  host: localhost
+  port: 37017
+  auth:
+    username: service-jobad-reader
+    password: pass
+    db: jobad-dev
