@@ -3,4 +3,3 @@ mongodb:
   auth:
     username: service-rss-reader
     password: pass
-    db: service-rss-reader
