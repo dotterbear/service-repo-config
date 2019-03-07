@@ -1,6 +1,0 @@
-mongodb:
-  host: rss-reader-mongo
-  port: 33002
-  auth:
-    username:
-    password:
