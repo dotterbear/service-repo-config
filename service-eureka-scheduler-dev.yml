@@ -1,3 +1,9 @@
 eureka:
   instance:
     hostname: localhost
+scheduler:
+  configMap:
+    service-jobad-reader:
+      name: service-jobad-reader
+      rate: 60000
+      path: /api/v1/batch/update-jobads
