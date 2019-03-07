@@ -1,5 +1,5 @@
 mongodb:
-  host: ${BRIDGE_NETWORK}
+  host: "{{BRIDGE_NETWORK}}"
   port: 37017
   auth:
     username: service-jobad-reader
