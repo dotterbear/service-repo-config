@@ -3,4 +3,3 @@ mongodb:
   auth:
     username: service-jobad-reader
     password: pass
-    db: jobad-dev

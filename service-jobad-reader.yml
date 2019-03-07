@@ -2,6 +2,8 @@ mongodb:
   db: jobad-${spring.profiles.active}
   bulk:
     insert: 500
+  auth:
+    db: jobad-${spring.profiles.active}
 eureka:
   client:
     register-with-eureka: true
