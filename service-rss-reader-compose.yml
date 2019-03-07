@@ -1,5 +1,4 @@
 mongodb:
-  host: "{{BRIDGE_NETWORK}}"
   port: 33002
   auth:
     username: service-rss-reader
