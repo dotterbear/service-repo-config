@@ -8,5 +8,5 @@ mongodb:
   host: ENC(oXYwgkqavDow85fxwV0eSDCvVlKF4tjT)
   port: ENC(YWpoI5+wFnm3ek2l2IRtpQ==)
   auth:
-    username:
-    password:
+    username: service-rss-reader
+    password: pass

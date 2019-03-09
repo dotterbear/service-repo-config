@@ -2,5 +2,5 @@ mongodb:
   host: localhost
   port: 33002
   auth:
-    username:
-    password:
+    username: service-rss-reader
+    password: pass
