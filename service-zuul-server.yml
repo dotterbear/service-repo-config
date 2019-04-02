@@ -17,3 +17,11 @@ zuul:
 
 server:
   port: 8766
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
