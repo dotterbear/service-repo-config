@@ -1,0 +1,13 @@
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  application:
+    name: service-image-hints
+eureka:
+  client:
+    register-with-eureka: true
+    instance:
+      appname: service-image-hints
+server:
+  port: 8860
