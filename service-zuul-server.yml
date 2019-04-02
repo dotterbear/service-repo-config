@@ -1,22 +1,21 @@
 spring:
   application:
     name: service-zuul-server
-
 eureka:
   client:
     register-with-eureka: true
     instance:
       appname: service-zuul-server
-
 zuul:
+  ignored-services: "*"
   routes:
     jobad-reader:
       path: /rest/**
       service-id: service-jobad-reader
-
 server:
   port: 8766
-
+ribbon:
+  ReadTimeout: 6000
 hystrix:
   command:
     default:
