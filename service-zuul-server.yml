@@ -12,6 +12,9 @@ zuul:
     jobad-reader:
       path: /rest/**
       service-id: service-jobad-reader
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
 server:
   port: 8766
 ribbon:
@@ -25,7 +28,3 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 30000
-zuul:
-  host:
-    connect-timeout-millis: 10000
-    socket-timeout-millis: 60000
