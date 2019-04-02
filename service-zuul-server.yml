@@ -9,7 +9,6 @@ eureka:
       appname: service-zuul-server
 
 zuul:
-  ignored-services: "*"
   routes:
     jobad-reader:
       path: /rest/**
