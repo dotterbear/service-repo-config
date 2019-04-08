@@ -1,0 +1,13 @@
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  application:
+    name: service-insta-tools
+eureka:
+  client:
+    register-with-eureka: true
+    instance:
+      appname: service-insta-tools
+server:
+  port: 8861
