@@ -1,5 +1,5 @@
 mongodb:
-  host: ENC(4lUl4Bjf7wva6A1eXPpfG5lVsAr/LFXg)
+  host: ENC(v17LM+jUjauf6SEPbGEtkIkzxVuX92ek)
   port: ENC(ocX+Ya85HROvv78DgCWv8A==)
   auth:
     username: ENC(rru9gQlC9D3YIjLizPgj0e3frHvQkQmc)
@@ -7,4 +7,4 @@ mongodb:
     db: ENC(SklaL+6Pyqhnz6bu6RLFFQ==)
 eureka:
   instance:
-    hostname: ENC(1JypzSnMMiWY+x1fGTnJuMFVRODMR2Jl)
+    hostname: ENC(v17LM+jUjauf6SEPbGEtkIkzxVuX92ek)
